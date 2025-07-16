@@ -74,7 +74,7 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: stretch;
-  flex: 0 0 80px; 
+  flex: 0 0 50px; 
 }
 
 .hito {
