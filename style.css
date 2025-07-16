@@ -77,8 +77,8 @@ button {
   width: auto;
   flex: 0 0 auto; 
   align-items: center;
-  margin-left: -6rem; 
-  margin-right: -6rem;
+  margin-left: -10rem; 
+  margin-right: -10rem;
 }
 
 .hito {
