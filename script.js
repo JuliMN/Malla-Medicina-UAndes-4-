@@ -94,6 +94,7 @@ function createMalla() {
         if (semestre[0] === "HITO") {
             col.classList.add("hito-columna");
             const hito = document.createElement("div");
+            hito.textContent = 'Hito evaluativo';
             hito.classList.add("hito");
             hito.innerText = "HITO EVALUATIVO";
             col.appendChild(hito);
