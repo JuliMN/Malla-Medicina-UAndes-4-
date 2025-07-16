@@ -2,26 +2,30 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Malla Curricular Medicina - UANDES</title>
-    <link href="style.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Malla Curricular Medicina - UANDES</title>
+  <link href="style.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link rel="manifest" href="manifest.json" />
 
-    <link rel="manifest" href="manifest.json" />
-    <script>
-    if ('serviceWorker' in navigator) {
+  <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.getRegistrations().then(regs => {
+      for (let reg of regs) reg.unregister();
+    }).then(() => {
       navigator.serviceWorker.register('service-worker.js')
-        .then(() => console.log('Service Worker Registered'));
-    }
-    </script>
+        .then(() => console.log('Nuevo Service Worker registrado'));
+    });
+  }
+  </script>
 </head>
 <body>
-    <header>
-        <h1>Malla Curricular Medicina - UANDES</h1>
-        <button onclick="resetProgress()">Reiniciar progreso</button>
-    </header>
-    <main id="mallaContainer"></main>
-    <script src="script.js"></script>
+  <header>
+    <h1>Malla Curricular Medicina - UANDES</h1>
+    <button onclick="resetProgress()">Reiniciar progreso</button>
+  </header>
+  <main id="mallaContainer"></main>
+  <script src="script.js"></script>
 </body>
 </html>
