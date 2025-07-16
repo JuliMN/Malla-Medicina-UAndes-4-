@@ -62,22 +62,14 @@ button {
 }
 
 .hito {
-    flex: 1;
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    text-align: center;
-    font-weight: bold;
-    padding: 0.5rem;
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-}
-    background-color: #ffeb3b;
-    writing-mode: vertical-rl;
-    text-align: center;
-    font-weight: bold;
-    padding: 1rem 0.5rem;
-    border-radius: 4px;
+  background-color: #ffeb3b;         
+  writing-mode: vertical-rl;        
+  transform: rotate(180deg);          
+  text-align: center;
+  font-weight: bold;
+  padding: 1rem 0.5rem;               
+  border-radius: 4px;                 
+  display: inline-block;              
 }
 
 .titulo-semestre {
