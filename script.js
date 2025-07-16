@@ -54,7 +54,6 @@ const materias = {
     "Internado Especialidades": { correlativas: [], desbloquea: [] }
 };
 
-const semestres = [
 const nombresSemestres = [
   "1° Semestre",
   "2° Semestre",
@@ -70,6 +69,7 @@ const nombresSemestres = [
   "11°–12° semestre"
 ];
 
+const semestres = [
     ["Práctica Médica I", "Fundamentos de Morfología", "Morfología I", "Ciencias Aplicadas a la Medicina", "Pensamiento Crítico", "Trabajo en Equipo y Liderazgo", "Antropología"],
     ["Práctica Médica II", "Comunicación", "Morfología II", "Ciencias Biomédicas", "Epidemiología Aplicada", "Antropología Médica", "Teología I"],
     ["Práctica Médica III", "Educación en Salud", "Promoción, Prevención y Salud Comunitaria", "Fisiología Integrada", "Teología II", "Minor I"],
